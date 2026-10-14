@@ -1,0 +1,62 @@
+.statusTicker {
+  height: 34px;
+  border-bottom: 1px solid #1c1f25;
+  background: #07080a;
+  overflow: hidden;
+}
+
+.statusTickerTrack {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  height: 100%;
+  padding: 0 22px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.statusTickerTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.statusTick {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  color: #d5dbe3;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.statusTick img {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  object-fit: contain;
+}
+
+.statusTick b {
+  color: #f4f6f8;
+  font-weight: 600;
+}
+
+.statusTick i {
+  font-style: normal;
+  font-family: var(--nx-mono);
+  font-size: 11px;
+}
+
+.statusTick .up {
+  color: #16c784;
+}
+
+.statusTick .down {
+  color: #f6465d;
+}
+
+.statusTick .flat {
+  color: #8b919a;
+}
