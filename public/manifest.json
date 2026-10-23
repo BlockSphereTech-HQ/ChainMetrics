@@ -1,0 +1,15 @@
+{
+  "short_name": "Chain Metrics",
+  "name": "Chain Metrics",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#060910",
+  "background_color": "#060910"
+}
