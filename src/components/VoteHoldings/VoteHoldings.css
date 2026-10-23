@@ -1,0 +1,148 @@
+.holdGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.holdCard {
+  min-width: 0;
+  padding: 14px 14px 8px;
+  border: 1px solid #23262d;
+  border-radius: 8px;
+  background: #101114;
+}
+
+.holdCard header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.holdTitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  color: #f4f6f8;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.holdTitle i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: #101114;
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.holdCard header a {
+  color: #8eb0ff;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.holdCard header a:hover {
+  color: #d5deff;
+}
+
+.holdMeta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.holdBar {
+  display: block;
+  height: 6px;
+  border-radius: 99px;
+  background: #1c2128;
+  overflow: hidden;
+}
+
+.holdBar b {
+  display: block;
+  height: 100%;
+}
+
+.holdMeta strong {
+  font-family: var(--nx-mono);
+  font-size: 12px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.holdRule,
+.holdCount {
+  margin: 8px 0 0;
+  color: #6f7782;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.holdCount {
+  font-variant-numeric: tabular-nums;
+}
+
+.holdDonut {
+  display: block;
+  width: min(220px, 100%);
+  margin: 4px auto 0;
+}
+
+.holdDonutCaption {
+  fill: #8b919a;
+  font-size: 11px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.holdDonutValue {
+  fill: #f4f6f8;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+.holdLegend {
+  list-style: none;
+  margin: 0;
+  padding: 0 2px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.holdLegend li {
+  display: grid;
+  grid-template-columns: 8px 64px minmax(0, 1fr);
+  gap: 8px;
+  align-items: center;
+  color: #8b919a;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.holdLegend i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.holdLegend b {
+  color: #e8edf2;
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .holdGrid {
+    grid-template-columns: 1fr;
+  }
+}
