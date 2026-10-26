@@ -1,0 +1,106 @@
+.insightChartFigure {
+  margin: 0;
+}
+
+.insightColumns,
+.insightChange {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.insightChange {
+  overflow: hidden;
+}
+
+.insightGrid {
+  stroke: rgba(255, 255, 255, 0.06);
+  stroke-width: 1;
+}
+
+.insightZero {
+  stroke: rgba(232, 238, 246, 0.38);
+  stroke-width: 1;
+}
+
+.insightAxis,
+.insightSymbol {
+  fill: #8b97a8;
+  font-size: 11px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.insightSymbol {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.insightColumnValue {
+  fill: #c9d4e8;
+  font-size: 12px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.insightColumnLabels {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 14px;
+  padding: 0 16px;
+}
+
+.insightColumnLabels span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: #8b97a8;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.insightColumnLabels img {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+}
+
+.insightMeters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.insightMeter {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) 36px;
+  gap: 8px;
+  align-items: center;
+}
+
+.insightMeter span,
+.insightMeter strong {
+  color: #8b97a8;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.insightMeter strong {
+  color: #e8eef6;
+  text-align: right;
+}
+
+.insightMeterTrack {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.insightMeterTrack i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
