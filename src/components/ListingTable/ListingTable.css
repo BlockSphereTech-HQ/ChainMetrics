@@ -1,0 +1,72 @@
+.listingTableWrap {
+  width: 100%;
+  color: #e8eef6;
+}
+
+.listingTableCaption {
+  padding: 0 0 10px;
+  color: #9aa6b8;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.listingTableScroll {
+  overflow-x: auto;
+}
+
+.listingTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+.listingTable th,
+.listingTable td {
+  padding: 12px 10px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.listingTable th:first-child,
+.listingTable td:first-child,
+.listingTable th:nth-child(2),
+.listingTable td:nth-child(2),
+.listingTable th:nth-child(3),
+.listingTable td:nth-child(3) {
+  text-align: left;
+}
+
+.listingTable th {
+  background: #10182b;
+  color: #8b97a8;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.listingTable tbody tr {
+  cursor: pointer;
+}
+
+.listingTable tbody tr:hover {
+  background: rgba(109, 151, 255, 0.08);
+}
+
+.listingTableSticky {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: #10182b;
+}
+
+.listingTable tbody tr:hover .listingTableSticky {
+  background: #162033;
+}
