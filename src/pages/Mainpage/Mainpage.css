@@ -1,0 +1,49 @@
+/* ===== Main Page Wrapper ===== */
+.mainPage {
+  width: 100%;
+  min-height: 100vh;
+  background: #07080a;
+}
+
+.mainPage::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: #07080a;
+  z-index: 0;
+}
+
+.siteHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.mainDiv,
+.siteFooter {
+  position: relative;
+  z-index: 1;
+}
+
+.mainDiv {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 126px 28px 56px;
+}
+
+.routeFallback {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9d4e8;
+}
+
+@media (max-width: 768px) {
+  .mainDiv {
+    padding: 118px 16px 40px;
+  }
+}
