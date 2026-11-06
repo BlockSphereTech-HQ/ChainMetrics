@@ -1,0 +1,122 @@
+.notifyToastStack {
+  position: fixed;
+  top: 108px;
+  right: 24px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: min(380px, calc(100vw - 32px));
+  pointer-events: none;
+}
+
+.notifyToast {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  padding: 2px;
+  background: #0c1018;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.38);
+  animation: notifyIn 0.38s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.notifyToastBorder {
+  position: absolute;
+  inset: -120%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 250deg,
+    var(--notify-glow) 318deg,
+    #f7fafc 344deg,
+    var(--notify-glow) 360deg
+  );
+  animation: notifyBorder 2.6s linear infinite;
+}
+
+.notifyToastBody {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 42%),
+    #10151f;
+}
+
+.notifyToastMark {
+  flex: 0 0 auto;
+  width: 7px;
+  height: 7px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--notify-glow);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--notify-glow) 18%, transparent);
+}
+
+.notifyToastCopy {
+  min-width: 0;
+}
+
+.notifyToastKind {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--notify-glow);
+  font-family: var(--nx-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.notifyToastMessage {
+  margin: 0;
+  color: #f4f7fb;
+  font-family: var(--nx-body);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+}
+
+.notifyToast-info {
+  --notify-glow: #8eb0ff;
+}
+
+.notifyToast-success {
+  --notify-glow: #3ddec0;
+}
+
+.notifyToast-warning {
+  --notify-glow: #e2b15a;
+}
+
+.notifyToast-error {
+  --notify-glow: #f08a8a;
+}
+
+@keyframes notifyBorder {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes notifyIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .notifyToast {
+    animation: none;
+  }
+}
