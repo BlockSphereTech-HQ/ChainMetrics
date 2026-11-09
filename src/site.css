@@ -1,0 +1,168 @@
+.nxPrompt {
+  display: block;
+  margin: 0 0 8px;
+  color: #8b97a8;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nxTitle {
+  margin: 0;
+  color: #f7fafc;
+  font-family: var(--nx-display);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  background: none;
+  -webkit-text-fill-color: #f7fafc;
+}
+
+.nxLede {
+  margin: 8px 0 0;
+  max-width: 640px;
+  color: #9aa6b8;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.nxGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.nxCard {
+  display: block;
+  min-width: 0;
+  padding: 22px 20px 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(158, 180, 220, 0.12);
+  background:
+    linear-gradient(180deg, rgba(18, 28, 48, 0.96), rgba(10, 16, 28, 0.96));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  color: inherit;
+  text-decoration: none;
+}
+
+.nxIcon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(109, 151, 255, 0.32);
+  background: rgba(109, 151, 255, 0.1);
+  color: #8eb0ff;
+}
+
+.nxIcon svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.nxCard h2 {
+  margin: 0 0 8px;
+  color: #f7fafc;
+  font-family: var(--nx-display);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.nxCard p {
+  margin: 0;
+  color: #8b97a8;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.nxTop {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 30;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 12px;
+  background: #1a2436;
+  color: #f7f9ff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid rgba(158, 180, 220, 0.2);
+}
+
+.nxTop:hover {
+  background: #6d97ff;
+}
+
+.discoverTitle,
+.intelTitle,
+.treasuryTitle,
+.promHeader h1,
+.tiersHeader h1,
+.listHeader span {
+  background: none;
+  -webkit-text-fill-color: #f7fafc;
+  color: #f7fafc;
+}
+
+.discoverHeader,
+.intelHero,
+.treasuryHeaderSection,
+.promHeader,
+.tiersHeader {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.promHeader,
+.tiersHeader,
+.treasuryHeaderSection {
+  width: 100%;
+}
+
+.intelSection {
+  padding: 0;
+  background: none;
+  border-radius: 16px;
+}
+
+.intelSectionInner,
+.intelStat,
+.intelCard,
+.treasuryBalanceCard,
+.statCard,
+.promCard,
+.tierCardInner,
+.listCoinDivWrap {
+  background: linear-gradient(180deg, rgba(16, 24, 40, 0.96), rgba(10, 16, 28, 0.96));
+  border: 1px solid rgba(158, 180, 220, 0.12);
+  border-radius: 16px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.promCardOuter,
+.tierCardOuter,
+.treasuryBalanceCardWrapped,
+.statCardWrapped {
+  padding: 0;
+  background: none;
+}
+
+@media (max-width: 900px) {
+  .nxGrid {
+    grid-template-columns: 1fr;
+  }
+}
